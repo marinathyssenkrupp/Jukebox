@@ -1,0 +1,7 @@
+{
+  "name": "Wurlitzer HyperSpin Jukebox",
+  "description": "A high-energy, retro-inspired jukebox emulator with a HyperSpin-style spinning selector for local music and music videos.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
