@@ -3,7 +3,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
     <title>Wurlitzer HyperSpin Jukebox</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Bungee&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +19,8 @@
             font-family: 'Inter', sans-serif;
             color: white;
             user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: none;
         }
         .retro-glow {
             text-shadow: 0 0 10px rgba(255, 0, 150, 0.8), 0 0 20px rgba(255, 0, 150, 0.5);
@@ -28,6 +34,15 @@
         ::-webkit-scrollbar {
             width: 0px;
             background: transparent;
+        }
+        /* Ajuste para áreas de notch en móviles modernos */
+        #root {
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            height: 100vh;
+            width: 100vw;
         }
     </style>
 <script type="importmap">

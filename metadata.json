@@ -1,7 +1,16 @@
 {
-  "name": "Wurlitzer HyperSpin Jukebox",
-  "description": "A high-energy, retro-inspired jukebox emulator with a HyperSpin-style spinning selector for local music and music videos.",
+  "name": "Wurlitzer AI HyperSpin",
+  "description": "Retro jukebox with AI-powered image editing and smart content analysis.",
   "requestFramePermissions": [
-    "microphone"
-  ]
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "android": {
+    "permissions": [
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.MODIFY_AUDIO_SETTINGS",
+      "android.permission.WAKE_LOCK"
+    ]
+  }
 }

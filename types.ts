@@ -1,7 +1,7 @@
 
 export type MediaType = 'audio' | 'video';
 
-export type SkinId = 'neon' | 'gold' | 'cyber' | 'vintage' | 'arctic';
+export type SkinId = 'neon' | 'gold' | 'cyber' | 'vintage' | 'arctic' | 'obsidian' | 'emerald' | 'amber';
 
 export interface SkinConfig {
   id: SkinId;
@@ -24,6 +24,7 @@ export interface MediaFile {
   folder: string;
   file: File;
   coverUrl?: string;
+  customCoverUrl?: string;
   metadata?: {
     artist?: string;
     album?: string;
